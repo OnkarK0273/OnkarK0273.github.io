@@ -38,7 +38,7 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div style={{position:'sticky',top:0,zIndex:1}}>
+    <div style={{position:'sticky',top:0,zIndex:2}}>
       <Box bg="#C7AE92" px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
          

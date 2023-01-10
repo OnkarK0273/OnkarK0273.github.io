@@ -21,26 +21,29 @@ import {
               <Text
                 as={'span'}
                 position={'relative'}
+                className="h1"
                 >
                 Onkar Kalsannawar
               </Text>
               <br />{''}
-              <Text color="#C7AE92" as={'span'}>
-               I am a M_E_R_N stack developer
+              <Text className="subtitle" color="#C7AE92" as={'span'}>
+              Full Stack Web Developer
               </Text>{' '}
             </Heading>
-            <Text fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
+            <Text  fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
             MERN stack developer with experience in developing full-stack web applications using MongoDB, Express, React, and Node.js.
               </Text>
             <Stack>
               <Button
                 w={{ base: '150px', md: '100px', lg: '100px' }}
                 m="auto"
-                rounded={'full'}
-                bg={'blue.500'}
-                color={'white'}
+                
+                borderColor="#C7AE92"
+                variant='outline'
+                color='#C7AE92'
                 _hover={{
-                  bg: 'blue.300',
+                  bg: '#C7AE92',
+                  color:'white'
                 }}>
                 Resume {'>'}
               </Button>
@@ -50,13 +53,15 @@ import {
             
           </Stack>
         </Flex>
-        <Flex flex={1}>
+        <Flex flex={1} border='0px'>
           <Image
-            p={{ base: '15px', md: '100px', lg: '50px' }}
+            p={{ base: '10px', md: '10px', lg: '10px' }}
             alt={'Login Image'}
             objectFit={'cover'}
+            w="80%"
+            m="auto"
             src={
-              '/images/profile-frame2.png'
+              '/images/rrr.png'
             }
           />
         </Flex>
