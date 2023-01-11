@@ -54,7 +54,7 @@ export default function Carousel({images}) {
       
       <IconButton
         aria-label="left-arrow"
-        bg='blackAlpha.100'
+        bg='blackAlpha.400'
         borderRadius="full"
         position="absolute"
         left={side}
@@ -67,7 +67,7 @@ export default function Carousel({images}) {
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-        bg='blackAlpha.100'
+        bg='blackAlpha.400'
         borderRadius="full"
         position="absolute"
         right={side}

@@ -8,7 +8,8 @@ export const repos = [
     topics: ["css", "html", "javascript"],
     images:[ '/images/insta-home.png',
     '/images/insta-post.png',
-    '/images/insta-login.png',]
+    '/images/insta-login.png',],
+    description:"the website allows you to add, edit, and delete posts and restore deleted posts."
   },
   {
     id: 586433289,
@@ -17,41 +18,44 @@ export const repos = [
     html_url: "https://github.com/OnkarK0273/Amazon-prime-clone",
     homepage: "https://amazone-prime-clone.netlify.app/index.html",
     topics: ["css3", "html5", "javascript"],
-    images:[ '/images/insta-home.png',
-    '/images/insta-post.png',
-    '/images/insta-login.png',]
+    images:[ '/images/prime-1.png',
+    '/images/prime-2.png',
+    ],
+    description:"the website allows you to search for all movies."
   },
   {
     id: 577832607,
     name: "Cronometer-Website-Clone",
     html_url: "https://github.com/OnkarK0273/false-army-3004",
     homepage: "https://cronometer-app-onkark0273.vercel.app/",
-    description:"Cronometer is the most accurate, comprehensive nutrition tracking app on earth",
     topics: ["chkra-ui", "reactjs"],
-    images:[ '/images/insta-home.png',
-    '/images/insta-post.png',
-    '/images/insta-login.png',]
+    images:[ '/images/cronometer-1.png',
+    '/images/cronometer-2.png',
+    '/images/cronometer-3.png',],
+    description:"the website which shows you real-time Nutrition from the food."
   },
   {
     id: 542080132,
     name: "Dot&Key-Website-Clone",
     html_url: "https://github.com/OnkarK0273/roasted-brake-1134",
-    description: "construct_week_project02",
+    description:"the website which shows you skin-care products, add them to your shopping cart and purchase them",
     homepage: "https://roasted-brake-1134-dot-kay-lifecare.netlify.app/",
     topics: ["css", "html", "javascript"],
-    images:[ '/images/insta-home.png',
-    '/images/insta-post.png',
-    '/images/insta-login.png',]
+    images:[ '/images/dor&key-1.png',
+    '/images/dor&key-2.png',
+    '/images/dor&key-3.png',]
   },
   {
     id: 528014496,
-    name: "arrogant-straw-2352",
+    name: "boAt-Website-Clone",
     html_url: "https://github.com/OnkarK0273/arrogant-straw-2352",
-    description: "construct-week project -01",
-    homepage: null,
+    description: " the website which shows you electronic products, log in, and add them to your shopping cart.",
+    homepage: "https://boat-clone-three.vercel.app/index.html",
     topics: ["css", "html", "javascript"],
-    images:[ '/images/insta-home.png',
-    '/images/insta-post.png',
-    '/images/insta-login.png',]
+    images:[ '/images/botlife-1.png',
+    '/images/botlife-2.png',
+    '/images/botlife-3.png',]
   },
 ];
+
+export const skills=['FaHtml5','FaCss3Alt','SiJavascript','SiTypescript','FaReact','SiRedux','SiChakraui','FaBootstrap','FaNode','DiMongodb','TbBrandNextjs','SiExpress','SiVercel','SiNetlify','SiPostman','FaGithub','SiVisualstudiocode','SiCanva']

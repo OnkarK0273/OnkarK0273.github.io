@@ -2,14 +2,20 @@ import { Box, Tag, Text, HStack ,IconButton,Icon} from '@chakra-ui/react'
 import React from 'react'
 import Carousel from './Cursor'
 import { AiOutlineLink,AiFillGithub} from "react-icons/ai";
-export default function Carditem({name,html_url,homepage,topics,images}) {
+export default function Carditem({name,html_url,homepage,topics,images,description}) {
     
   return (
     <div>
-        <Box height={"350px"} boxShadow='md' p='1px' rounded='md' borderColor='#C7AE92'>
+        <Box height={"410px"} bg='whiteAlpha.800' boxShadow='md' p='2px' rounded='md' borderColor='#C7AE92'_hover={{
+                  bg: 'whiteAlpha.800',
+                  boxShadow:'2xl',
+                  p:'3px',
+                  
+                }}>
             
             <Carousel images={images}/>
             <Text fontWeight={'bold'}>{name}</Text>
+            <Text color={'gray.500'}>{description}</Text>
             
             <HStack justifyContent={'center'} mt='10px'>
             {
