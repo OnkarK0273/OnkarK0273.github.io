@@ -21,9 +21,9 @@ import { DiMongodb } from 'react-icons/di'
 
 export default function Skills() {
   return (
-    <Box>
+    <Box id='Skills'>
         <Heading color='#C7AE92' p='20px' mb='30px'>SKILLS</Heading>
-        <Grid templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg: 'repeat(6, 1fr)'}} w='85%'  m='auto' rowGap={'20px'} columnGap='20px'>
+        <Grid templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg: 'repeat(6, 1fr)'}} w='80%'  m='auto' rowGap={'20px'} columnGap='20px'>
 
         <IconButton  bg='#C7AE92' size={'lg'} icon={<Icon as={FaHtml5} boxSize={8} />} />
         <IconButton  bg='#C7AE92' size={'lg'} icon={<Icon as={FaCss3Alt} boxSize={8} />} />

@@ -29,7 +29,7 @@ const NavLink = ({ children }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}>
+    href={`#${children}`}>
     {children}
   </Link>
 );
@@ -38,7 +38,7 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div style={{position:'sticky',top:0,zIndex:2}}>
+    <div  style={{position:'sticky',top:0,zIndex:2}}>
       <Box bg="#C7AE92" px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
          

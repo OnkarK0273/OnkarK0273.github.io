@@ -1,4 +1,5 @@
 export const repos = [
+  /*
   {
     id: 586978723,
     name: "instagram-clone",
@@ -23,11 +24,12 @@ export const repos = [
     ],
     description:"the website allows you to search for all movies."
   },
+  */
   {
     id: 577832607,
     name: "Cronometer-Website-Clone",
     html_url: "https://github.com/OnkarK0273/false-army-3004",
-    homepage: "https://cronometer-app-onkark0273.vercel.app/",
+    homepage: "https://drive.google.com/file/d/1GTGcnHq4nzXYGt2RErwiE85JndXC8548/view?usp=share_link",
     topics: ["chkra-ui", "reactjs"],
     images:[ '/images/cronometer-1.png',
     '/images/cronometer-2.png',
