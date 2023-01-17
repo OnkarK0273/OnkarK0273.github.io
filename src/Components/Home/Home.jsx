@@ -37,7 +37,7 @@ import {
               <Button
                 w={{ base: '150px', md: '100px', lg: '100px' }}
                 m="auto"
-                
+                onClick={()=>{document.location.href='https://drive.google.com/file/d/10caKf20AnU9VYco2-Nj4q6VsuQqDUbjc/view?usp=share_link'}}
                 borderColor="#C7AE92"
                 variant='outline'
                 color='#C7AE92'
@@ -45,7 +45,7 @@ import {
                   bg: '#C7AE92',
                   color:'white'
                 }}>
-                Resume {'>'}
+                  <a href='/Onkar_Kalsannawar_Resume.pdf' download>Resume {'>'}</a>
               </Button>
             </Stack>
           

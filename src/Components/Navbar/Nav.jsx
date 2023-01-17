@@ -14,6 +14,7 @@ import {
   Stack,
  
   Image,
+  Button,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
@@ -57,6 +58,16 @@ export default function Nav() {
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
+              <Button
+                w={{ base: '150px', md: '100px', lg: '100px' }}
+                m="auto"
+                onClick={()=>{document.location.href='https://drive.google.com/file/d/10caKf20AnU9VYco2-Nj4q6VsuQqDUbjc/view?usp=share_link'}}
+                borderColor="white"
+                variant='outline'
+                
+                >
+                  <a href='/Onkar_Kalsannawar_Resume.pdf' download>Resume {''}</a>
+              </Button>
             </HStack>
           </HStack>
           <IconButton
