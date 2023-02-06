@@ -18,9 +18,9 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'About', 'Skills',"Projects","Contact"];
 
-const NavLink = ({ children }) => (
+const Links =[{name:'Home',id:'home',class:'nav-link home'},{name:'About',id:'about',class:'nav-link about'},{name:'Skills',id:'skills',class:'nav-link skills'},{name:'Projects',id:'projects',class:'nav-link projects'},{name:'Contact',id:'contact',class:'nav-link contact'}]
+const NavLink = ({link}) => (
   <Link
     px={5}
     py={1}
@@ -30,8 +30,9 @@ const NavLink = ({ children }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={`#${children}`}>
-    {children}
+    className={link.class}
+    href={`#${link.id}`}>
+    {link.name}
   </Link>
 );
 
@@ -39,7 +40,7 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div  style={{position:'sticky',top:0,zIndex:2}}>
+    <div  id="nav-menu" style={{position:'sticky',top:0,zIndex:2}}>
       <Box bg="#C7AE92" px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
          
@@ -56,7 +57,7 @@ export default function Nav() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.id} link={link}/>
               ))}
               <Button
                 w={{ base: '150px', md: '100px', lg: '100px' }}
@@ -64,9 +65,9 @@ export default function Nav() {
                 onClick={()=>{document.location.href='https://drive.google.com/file/d/10caKf20AnU9VYco2-Nj4q6VsuQqDUbjc/view?usp=share_link'}}
                 borderColor="white"
                 variant='outline'
-                
+                id="resume-button-1"
                 >
-                  <a href='/Onkar_Kalsannawar_Resume.pdf' download>Resume {''}</a>
+                  <a  id="resume-link-1" href='/Onkar_Kalsannawar_Resume.pdf' className="nav-link resume" download>Resume {''}</a>
               </Button>
             </HStack>
           </HStack>
@@ -84,7 +85,7 @@ export default function Nav() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.id} link={link}/>
               ))}
             </Stack>
           </Box>

@@ -36,7 +36,7 @@ export default function Carousel({images}) {
       m='auto'
       position={'relative'}
       height={'230px'}
-      w='310px'
+      w='280px'
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link

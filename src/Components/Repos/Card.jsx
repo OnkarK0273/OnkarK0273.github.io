@@ -4,7 +4,7 @@ import Carditem from './Carditem'
 import { repos } from '../../Data/repos'
 export default function Card() {
   return (
-    <div id='Projects'>
+    <div  id="projects">
         <Heading color={'#C7AE92'} pt='40px' pb='40px'>PROJECTS </Heading>
         { <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)'}}w='80%' m='auto'  columnGap={'4%'} rowGap='20px' >
             {

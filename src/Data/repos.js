@@ -1,5 +1,5 @@
 export const repos = [
-  /*
+  
   {
     id: 586978723,
     name: "instagram-clone",
@@ -24,7 +24,7 @@ export const repos = [
     ],
     description:"the website allows you to search for all movies."
   },
-  */
+  
   {
     id: 577832607,
     name: "Cronometer-Website-Clone",

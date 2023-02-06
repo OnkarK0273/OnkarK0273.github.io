@@ -11,7 +11,7 @@ import {
   
   export default function Home() {
     return (
-      <Stack id='Home' minH={'100vh'} direction={{ base: 'column',sm:'column', md: 'column',lg:"row" }}>
+      <Stack id="home" minH={'100vh'} direction={{ base: 'column',sm:'column', md: 'column',lg:"row" }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'} >
           <Stack spacing={6} w={'full'} maxW={'lg'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -22,6 +22,7 @@ import {
                 as={'span'}
                 position={'relative'}
                 className="h1"
+                id="user-detail-name"
                 >
                 Onkar Kalsannawar
               </Text>
@@ -30,7 +31,7 @@ import {
               Full Stack Web Developer
               </Text>{' '}
             </Heading>
-            <Text  fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
+            <Text  id="user-detail-intro" fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
             Full stack developer with experience in developing full-stack web applications using MongoDB, Express, React, and Node.js.
               </Text>
             <Stack>
@@ -41,11 +42,12 @@ import {
                 borderColor="#C7AE92"
                 variant='outline'
                 color='#C7AE92'
+                id="resume-button-2"
                 _hover={{
                   bg: '#C7AE92',
                   color:'white'
                 }}>
-                  <a href='/Onkar_Kalsannawar_Resume.pdf' download>Resume {'>'}</a>
+                  <a  id="resume-link-2" href='/Onkar_Kalsannawar_Resume.pdf' download>Resume {'>'}</a>
               </Button>
             </Stack>
           
@@ -58,6 +60,7 @@ import {
             p={{ base: '10px', md: '10px', lg: '10px' }}
             alt={'Login Image'}
             objectFit={'cover'}
+            className='home-img'
             w="80%"
             m="auto"
             src={
