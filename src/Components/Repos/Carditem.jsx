@@ -26,8 +26,8 @@ export default function Carditem({name,html_url,homepage,topics,images,descripti
             }
             </HStack>
             <HStack justifyContent={'center'} columnGap='8px' mt='10px'>
-            <IconButton className='project-github-link' onClick={()=>{ document.location.href=html_url}} bg='#C7AE92' size={'sm'} icon={<Icon as={AiFillGithub}  />} />
-            <IconButton className='project-deployed-link' onClick={()=>{ document.location.href=homepage}} bg='#C7AE92' size={'sm'} icon={<Icon as={id===577832607?MdSlowMotionVideo:AiOutlineLink}  />} />
+            <IconButton className='project-github-link' onClick={()=>{window.open(html_url,"_blank")}} bg='#C7AE92' size={'sm'} icon={<Icon as={AiFillGithub}  />} />
+            <IconButton className='project-deployed-link' onClick={()=>{window.open(homepage,"_blank")}}bg='#C7AE92' size={'sm'} icon={<Icon as={id===577832607?MdSlowMotionVideo:AiOutlineLink}  />} />
             </HStack>
         </Box>
 

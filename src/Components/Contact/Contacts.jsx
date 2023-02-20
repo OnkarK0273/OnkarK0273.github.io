@@ -36,11 +36,11 @@ export default function Contacts() {
                         </Menu>
                         <Flex border={'0px'}  justifyContent='space-around' alignItems={'center'} w='30%' >
                         
-                            <IconButton id="contact-github" onClick={()=>{document.location.href='https://github.com/OnkarK0273' }} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillGithub} boxSize={8} />} />
-                            <IconButton onClick={()=>{document.location.href='https://twitter.com/iOnkar_K' }} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillTwitterCircle} boxSize={8} />} />
-                            <IconButton id="contact-linkedin" onClick={()=>{ document.location.href='https://www.linkedin.com/in/onkar-k-557a421a4/'}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillLinkedin} boxSize={8} />} />
+                            <IconButton id="contact-github" onClick={()=>{window.open("https://github.com/OnkarK0273","_blank")}}  bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillGithub} boxSize={8} />} />
+                            <IconButton onClick={()=>{window.open("https://twitter.com/iOnkar_K","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillTwitterCircle} boxSize={8} />} />
+                            <IconButton id="contact-linkedin" onClick={()=>{window.open("https://www.linkedin.com/in/onkar-k-557a421a4/","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillLinkedin} boxSize={8} />} />
                         </Flex>
-
+                        
                 </Flex>
                 
             </Box>

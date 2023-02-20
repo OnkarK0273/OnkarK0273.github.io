@@ -62,12 +62,13 @@ export default function Nav() {
               <Button
                 w={{ base: '150px', md: '100px', lg: '100px' }}
                 m="auto"
-                onClick={()=>{document.location.href='https://drive.google.com/file/d/10caKf20AnU9VYco2-Nj4q6VsuQqDUbjc/view?usp=share_link'}}
+                onClick={()=>{window.open('https://drive.google.com/file/d/10caKf20AnU9VYco2-Nj4q6VsuQqDUbjc/view?usp=share_link',"_blank")}}
                 borderColor="white"
                 variant='outline'
+                
                 id="resume-button-1"
                 >
-                  <a  id="resume-link-1" href='/Onkar_Kalsannawar_Resume.pdf' className="nav-link resume" download>Resume {''}</a>
+                  <a  id="resume-link-1" href='/Onkar_Kalsannawar_Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
               </Button>
             </HStack>
           </HStack>
