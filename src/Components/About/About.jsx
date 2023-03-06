@@ -4,7 +4,7 @@ import React from 'react'
 export default function About() {
   return (
     <div id="about" class="about section">
-      <h1 color={'#C7AE92'} pt='40px' pb='40px'>ABOUT ME</h1>
+      <Heading color={'#C7AE92'} pt='40px' pb='40px'>ABOUT ME</Heading>
       <Text fontSize={'20px'} fontWeight={'700'} w="80%" m='auto' pb='10px'>My name is <lebal style={{color:'#C7AE92',fontStyle:'italic'}}>Onkar Kalsannawar</lebal>. I am a Full-Stack Web Developer.</Text>
    
       <Text color={'gray.500'} textAlign={'left'} w="80%" m='auto'>Aspiring Full Stack Developer who is analytical and detail-oriented.

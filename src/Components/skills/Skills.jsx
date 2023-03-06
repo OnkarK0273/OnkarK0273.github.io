@@ -22,7 +22,7 @@ import { DiMongodb } from 'react-icons/di'
 export default function Skills() {
   return (
     <Box id="skills">
-        <Heading color='#C7AE92' p='20px' mb='30px'>SKILLS</Heading>
+        <Heading color='#C7AE92' p='30px' mb='20px'>SKILLS</Heading>
         <Grid templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg: 'repeat(6, 1fr)'}} w='80%'  m='auto' rowGap={'20px'} columnGap='20px'>
 
         <Box  bg='#C7AE92' p='5px' borderRadius={'md'}  _hover={{ bg:'#E2E8F0' }}>

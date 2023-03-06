@@ -20,12 +20,15 @@ export default function Contacts() {
                     <HStack columnGap={'10px'}>
                         <Icon as={MdCall} boxSize={8} />
                         <Text  id="contact-phone" fontWeight={'bold'}>
-                            +91-9503504241
+
+                             <a href="tel:919503504241" target={'_blank'} rel='noreferrer' >+91-9503504241</a>   
                         </Text>
                     </HStack>
                     <HStack columnGap={'10px'}>
                         <Icon as={AiTwotoneMail} boxSize={8} />
-                        <Text  id="contact-email" fontWeight={'bold'}>onkarok0273.1@gmail.com</Text>
+                        <Text  id="contact-email" fontWeight={'bold'}>
+                           <a href="mailto:onkarok0273.1@gmail.com" target={'_blank'}  rel='noreferrer' >onkarok0273.1@gmail.com</a> 
+                        </Text>
                     </HStack>
                 </VStack>
             </VStack>

@@ -17,23 +17,34 @@ import {
   Button,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-
-
+import * as Scroll from "react-scroll";
+import styes from "./Navbar.css";
 const Links =[{name:'Home',id:'home',class:'nav-link home'},{name:'About',id:'about',class:'nav-link about'},{name:'Skills',id:'skills',class:'nav-link skills'},{name:'Projects',id:'projects',class:'nav-link projects'},{name:'Contact',id:'contact',class:'nav-link contact'}]
 const NavLink = ({link}) => (
-  <Link
-    px={5}
-    py={1}
-    fontWeight="semibold"
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    className={link.class}
-    href={`#${link.id}`}>
-    {link.name}
-  </Link>
+  <Scroll.Link
+  activeClass="active"
+  to={link.id}
+  spy={true}
+  smooth={true}
+  offset={-100}
+  duration={500}
+  className= {`nav-link ${link.id} hover-underline-animation`}
+  >
+    <Link
+      px={5}
+      py={1}
+      fontWeight="semibold"
+      rounded={'md'}
+      _hover={{
+        textDecoration: 'none',
+        bg: useColorModeValue('gray.200', 'gray.700'),
+      }}
+      className={link.class}
+      // href={`#${link.id}`}
+      >
+      {link.name}
+    </Link>
+      </Scroll.Link>
 );
 
 export default function Nav() {
@@ -68,7 +79,7 @@ export default function Nav() {
                 
                 id="resume-button-1"
                 >
-                  <a  id="resume-link-1" href='/Onkar_Kalsannawar_Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
+                  <a  id="resume-link-1" href='/fp06_227-Onkar-Kalsannawar-Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
               </Button>
             </HStack>
           </HStack>
