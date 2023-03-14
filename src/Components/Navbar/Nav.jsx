@@ -28,7 +28,7 @@ const NavLink = ({link}) => (
   smooth={true}
   offset={-100}
   duration={500}
-  className= {`nav-link ${link.id} hover-underline-animation`}
+  
   >
     <Link
       px={5}

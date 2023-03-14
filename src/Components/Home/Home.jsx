@@ -32,8 +32,8 @@ import {
               </Text>{' '}
             </Heading>
             <Text  id="user-detail-intro" fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
-            Full stack developer with experience in developing full-stack web applications using MongoDB, Express, React, and Node.js.
-              </Text>
+             Full stack developer with experience in developing full-stack web applications using MongoDB, Express, React, and Node.js.
+            </Text>
             <Stack>
               <Button
                 w={{ base: '150px', md: '100px', lg: '100px' }}

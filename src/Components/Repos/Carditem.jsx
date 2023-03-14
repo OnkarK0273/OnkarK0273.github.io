@@ -1,4 +1,4 @@
-import { Box, Tag, Text, HStack ,IconButton,Icon} from '@chakra-ui/react'
+import { Box, Tag, Text, HStack ,IconButton,Icon, Image} from '@chakra-ui/react'
 import React from 'react'
 import Carousel from './Cursor'
 import { AiOutlineLink,AiFillGithub} from "react-icons/ai";
@@ -6,8 +6,8 @@ import {MdSlowMotionVideo } from "react-icons/md";
 export default function Carditem({name,html_url,homepage,topics,images,description,id}) {
     
   return (
-    <div>
-        <Box className="project-card" height={"440px"} bg='whiteAlpha.800' boxShadow='md' p='2px' rounded='md' borderColor='#C7AE92'_hover={{
+    <div className="project-card" >
+        <Box height={"440px"} bg='whiteAlpha.800' boxShadow='md' p='2px' rounded='md' borderColor='#C7AE92'_hover={{
                   bg: 'whiteAlpha.800',
                   boxShadow:'2xl',
                   p:'3px',
@@ -15,6 +15,7 @@ export default function Carditem({name,html_url,homepage,topics,images,descripti
                 }}>
             
             <Carousel images={images}/>
+            <Image alt='image' />
             <Text className='project-title' fontWeight={'bold'}>{name}</Text>
             <Text className='project-description' w='80%' m='auto' color={'gray.500'}>{description}</Text>
             

@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 const Calender = () => {
 
   return (
-    <Box w='80%'m='auto'>
+    <Box w='80%'m='auto' className="react-activity-calendar" >
       <Heading color='#C7AE92'pt='40px' pb='40px'>DAYS I CODE</Heading>
       <GitHubCalendar
         style={{ margin: "auto" }}
