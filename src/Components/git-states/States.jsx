@@ -10,7 +10,7 @@ export default function States() {
             <Image  id="github-stats-card" src='https://github-readme-stats.vercel.app/api?username=OnkarK0273&theme=swift&show_icons=true&hide_border=false&count_private=true'/>
             </Box>
             <Box>
-            <Image  id="github-streak-stats"  src='https://github-readme-streak-stats.herokuapp.com/?user=OnkarK0273&theme=vue-dark&hide_border=false'/>
+            <Image  id="github-streak-stats"  src='https://github-readme-streak-stats.herokuapp.com/?user=OnkarK0273&theme=swift&hide_border=false'/>
             </Box>
             <Box>
             <Image  id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs/?username=OnkarK0273&theme=swift&show_icons=true&hide_border=false&layout=compact'/>

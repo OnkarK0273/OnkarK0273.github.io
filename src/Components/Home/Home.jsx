@@ -22,7 +22,7 @@ import {
                 as={'span'}
                 position={'relative'}
                 className="h1"
-                id="user-detail-name"
+                
                 >
                 Onkar Kalsannawar
               </Text>
@@ -31,7 +31,7 @@ import {
               Full Stack Web Developer
               </Text>{' '}
             </Heading>
-            <Text  id="user-detail-intro" fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
+            <Text   fontSize={{ base: 'md',sm:"xl", lg: '2xl' }} color={'gray.500'}>
              Full stack developer with experience in developing full-stack web applications using MongoDB, Express, React, and Node.js.
             </Text>
             <Stack>

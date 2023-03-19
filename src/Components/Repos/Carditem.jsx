@@ -15,7 +15,7 @@ export default function Carditem({name,html_url,homepage,topics,images,descripti
                 }}>
             
             <Carousel images={images}/>
-            <Image alt='image' />
+            <Image w='5px' alt='image' src='https://png.pngtree.com/thumb_back/fh260/background/20200821/pngtree-pure-white-minimalist-background-wallpaper-image_396581.jpg' />
             <Text className='project-title' fontWeight={'bold'}>{name}</Text>
             <Text className='project-description' w='80%' m='auto' color={'gray.500'}>{description}</Text>
             
