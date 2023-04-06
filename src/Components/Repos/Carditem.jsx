@@ -7,7 +7,7 @@ export default function Carditem({name,html_url,homepage,topics,images,descripti
     
   return (
     <div className="project-card" >
-        <Box height={"440px"} bg='whiteAlpha.800' boxShadow='md' p='2px' rounded='md' borderColor='#C7AE92'_hover={{
+        <Box height={"460px"} bg='whiteAlpha.800' display={'flex'} alignItems='center' justifyContent={'space-evenly'} flexDirection={'column'} boxShadow='md' p='2px' pb='5px' rounded='md' borderColor='#C7AE92'_hover={{
                   bg: 'whiteAlpha.800',
                   boxShadow:'2xl',
                   p:'3px',
@@ -19,7 +19,7 @@ export default function Carditem({name,html_url,homepage,topics,images,descripti
             <Text className='project-title' fontWeight={'bold'}>{name}</Text>
             <Text className='project-description' w='80%' m='auto' color={'gray.500'}>{description}</Text>
             
-            <HStack justifyContent={'center'} mt='10px'>
+            <HStack justifyContent={'center'} alignItems={'center'} mt='10px' flexWrap={'wrap'}  w='80%' m='auto' >
             {  topics.map((el,i)=>(<Tag className='project-tech-stack' key={i} size='sm' 
                 variant='outline'
                 color='black' p='5px' >{el}</Tag>))

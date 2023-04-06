@@ -1,16 +1,15 @@
 export const repos = [
   
   {
-    id: 586978723,
-    name: "instagram-clone",
-    full_name: "OnkarK0273/instagram-clone",
-    html_url: "https://github.com/OnkarK0273/instagram-clone",
-    homepage: "https://instagram-clone-nine-lime.vercel.app/",
+    id: 52801449888,
+    name: "boAt-Website-Clone",
+    html_url: "https://github.com/OnkarK0273/arrogant-straw-2352",
+    description: " the website which shows you electronic products, log in, and add them to your shopping cart.",
+    homepage: "https://boat-clone-three.vercel.app/index.html",
     topics: ["css", "html", "javascript"],
-    images:[ '/images/insta-home.png',
-    '/images/insta-post.png',
-    '/images/insta-login.png',],
-    description:"the website allows you to add, edit, and delete posts and restore deleted posts."
+    images:[ '/images/botlife-1.png',
+    '/images/botlife-2.png',
+    '/images/botlife-3.png',]
   },
   {
     id: 586433289,
@@ -24,18 +23,6 @@ export const repos = [
     ],
     description:"the website allows you to search for all movies."
   },
-  
-  {
-    id: 577832607,
-    name: "Cronometer-Website-Clone",
-    html_url: "https://github.com/OnkarK0273/false-army-3004",
-    homepage: "https://drive.google.com/file/d/1GTGcnHq4nzXYGt2RErwiE85JndXC8548/view?usp=share_link",
-    topics: ["chkra-ui", "reactjs"],
-    images:[ '/images/cronometer-1.png',
-    '/images/cronometer-2.png',
-    '/images/cronometer-3.png',],
-    description:"the website which shows you real-time Nutrition from the food."
-  },
   {
     id: 542080132,
     name: "Dot&Key-Website-Clone",
@@ -48,16 +35,48 @@ export const repos = [
     '/images/dor&key-3.png',]
   },
   {
-    id: 528014496,
-    name: "boAt-Website-Clone",
-    html_url: "https://github.com/OnkarK0273/arrogant-straw-2352",
-    description: " the website which shows you electronic products, log in, and add them to your shopping cart.",
-    homepage: "https://boat-clone-three.vercel.app/index.html",
-    topics: ["css", "html", "javascript"],
-    images:[ '/images/botlife-1.png',
-    '/images/botlife-2.png',
-    '/images/botlife-3.png',]
+    id: 54208013255,
+    name: "HealthKart-Website-Clone",
+    html_url: "https://github.com/akaushik509/internal-appliance-3345",
+    description:"HealthKart-Website-Clone is collaborative project, It is a great place for people serious about health and fitness.",
+    homepage: "https://nutribest-mocha.vercel.app/",
+    topics: ["NextJS", "Redux", "ChkraUI"],
+    images:[ '/images/helth-1.png',
+    '/images/helth-2.png',
+    '/images/helth-3.png',
+    '/images/helth-4.png',
+    '/images/helth-5.png',
+    '/images/helth-6.png']
   },
+  {
+    id: 528014496,
+    name: "Koovs-Website-Clone",
+    html_url: "https://github.com/OnkarK0273/penitent-degree-5872",
+    description: "Koovs-Website-Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products.",
+    homepage: "https://koolz.vercel.app/",
+    topics: ["ReactJS", "Redux", "TypeScript","ChkraUI"],
+    images:[ '/images/koovs-1.png',
+    '/images/koovs-2.png',
+    '/images/koovs-3.png',
+    '/images/koovs-4.png',
+    '/images/koovs-5.png',
+    '/images/koovs-6.png',
+    '/images/koovs-7.png']
+  },
+  {
+    id: 5280144969999,
+    name: "Indiamart-Website-Clone",
+    html_url: "https://github.com/OnkarK0273/resilient-gate-1588",
+    description: "Indiamart-Website-Clone is a leading B2B e-commerce company in India that connects suppliers with buyers.",
+    homepage: "https://martmate.vercel.app/",
+    topics: ["ReactJS", "Redux", "ChkraUI","NodeJS","ExpressJS","MongoDB"],
+    images:[ '/images/mart-1.png',
+    '/images/mart-2.png',
+    '/images/mart-3.png',
+    '/images/mart-4.png',
+    '/images/mart-5.png'
+   ]
+  }
 ];
 
 export const skills=['FaHtml5','FaCss3Alt','SiJavascript','SiTypescript','FaReact','SiRedux','SiChakraui','FaBootstrap','FaNode','DiMongodb','TbBrandNextjs','SiExpress','SiVercel','SiNetlify','SiPostman','FaGithub','SiVisualstudiocode','SiCanva']

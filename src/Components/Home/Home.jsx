@@ -47,7 +47,7 @@ import {
                   bg: '#C7AE92',
                   color:'white'
                 }}>
-                  <a  id="resume-link-2" href='/fp06_227-Onkar-Kalsannawar-Resume.pdf' download>Resume {'>'}</a>
+                  <a  id="resume-link-2" href='/Onkar-Kalsannawar-Resume.pdf' download>Resume {'>'}</a>
               </Button>
             </Stack>
           

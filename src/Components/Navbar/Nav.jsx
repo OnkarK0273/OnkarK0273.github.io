@@ -79,7 +79,7 @@ export default function Nav() {
                 
                 id="resume-button-1"
                 >
-                  <a  id="resume-link-1" href='/fp06_227-Onkar-Kalsannawar-Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
+                  <a  id="resume-link-1" href='/Onkar-Kalsannawar-Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
               </Button>
             </HStack>
           </HStack>
