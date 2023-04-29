@@ -7,7 +7,7 @@ export default function Contacts() {
   return (
     <Box  id="contact">
 
-        <Heading color={'#C7AE92'}  pt='40px' pb='40px'>CONTACT ME</Heading>
+        <Heading color={'#C7AE92'} pt='40px' pb='40px'>CONTACT ME</Heading>
         <Box bg='#C7AE92' pt='20px' m='auto'>
 
         
@@ -38,10 +38,19 @@ export default function Contacts() {
                             <Image w='100px' src='/images/signature.png'></Image>
                         </Menu>
                         <Flex border={'0px'}  justifyContent='space-around' alignItems={'center'} w='30%' >
-                        
-                            <IconButton id="contact-github" onClick={()=>{window.open("https://github.com/OnkarK0273","_blank")}}  bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillGithub} boxSize={8} />} />
-                            <IconButton onClick={()=>{window.open("https://twitter.com/iOnkar_K","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillTwitterCircle} boxSize={8} />} />
-                            <IconButton id="contact-linkedin" onClick={()=>{window.open("https://www.linkedin.com/in/onkar-k-557a421a4/","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillLinkedin} boxSize={8} />} />
+                            <Box>
+                                <IconButton id="contact-github" onClick={()=>{window.open("https://github.com/OnkarK0273","_blank")}}  bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillGithub} boxSize={8} />} />
+                                <Text>@OnkarK0273</Text>
+                            </Box>
+                            <Box>
+                                <IconButton onClick={()=>{window.open("https://twitter.com/iOnkar_K","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillTwitterCircle} boxSize={8} />} />
+                                <Text>@iOnkar_K</Text>
+                            </Box>
+                            <Box>
+                                
+                                <IconButton id="contact-linkedin" onClick={()=>{window.open("https://www.linkedin.com/in/onkar-k-557a421a4/","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillLinkedin} boxSize={8} />} />
+                                <Text>@Onkar K</Text>
+                            </Box>
                         </Flex>
                         
                 </Flex>

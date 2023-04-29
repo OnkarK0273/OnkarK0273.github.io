@@ -11,6 +11,7 @@ import {
   
   export default function Home() {
     return (
+      
       <Stack id="home" minH={'100vh'} direction={{ base: 'column',sm:'column', md: 'column',lg:"row" }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'} >
           <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -69,5 +70,6 @@ import {
           />
         </Flex>
       </Stack>
+      
     );
   }

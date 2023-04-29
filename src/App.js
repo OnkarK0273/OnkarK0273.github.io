@@ -7,6 +7,7 @@ import Card from './Components/Repos/Card';
 import Skills from './Components/skills/Skills';
 import About from './Components/About/About';
 import Contacts from './Components/Contact/Contacts';
+import { SlideFade } from '@chakra-ui/react';
 
 
 function App() {

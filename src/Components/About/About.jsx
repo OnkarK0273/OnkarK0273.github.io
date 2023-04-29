@@ -10,7 +10,7 @@ export default function About() {
       <Text id="user-detail-intro"  color={'gray.500'} textAlign={'left'} w="80%" m='auto'>Aspiring Full Stack Developer who is analytical and detail-oriented.
         Capable of producing production-ready code for single-page applications
         using ReactJS, ExpressJS, MongoDB, and Nodejs. 1100+ hours of
-        coding,250+ DSA problem solved, and hands-on experience in making 3 fully
+        coding,500+ DSA problem solved, and hands-on experience in making 3 fully
         functional websites. looking forward to working as a full-stack web
         developer in the tech company.
       </Text>
