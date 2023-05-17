@@ -40,16 +40,16 @@ export default function Contacts() {
                         <Flex border={'0px'}  justifyContent='space-around' alignItems={'center'} w='30%' >
                             <Box>
                                 <IconButton id="contact-github" onClick={()=>{window.open("https://github.com/OnkarK0273","_blank")}}  bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillGithub} boxSize={8} />} />
-                                <Text>@OnkarK0273</Text>
+                                <Text display={{"base":"none","lg":"block"}} >@OnkarK0273</Text>
                             </Box>
                             <Box>
                                 <IconButton onClick={()=>{window.open("https://twitter.com/iOnkar_K","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillTwitterCircle} boxSize={8} />} />
-                                <Text>@iOnkar_K</Text>
+                                <Text display={{"base":"none","lg":"block"}}>@iOnkar_K</Text>
                             </Box>
                             <Box>
                                 
                                 <IconButton id="contact-linkedin" onClick={()=>{window.open("https://www.linkedin.com/in/onkar-k-557a421a4/","_blank")}} bg='#C7AE92' size={'lg'} icon={<Icon as={AiFillLinkedin} boxSize={8} />} />
-                                <Text>@Onkar K</Text>
+                                <Text display={{"base":"none","lg":"block"}}>@Onkar K</Text>
                             </Box>
                         </Flex>
                         
