@@ -15,12 +15,18 @@ import {
  
   Image,
   Button,
+  Text,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  DrawerBody,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import * as Scroll from "react-scroll";
 import styes from "./Navbar.css";
 const Links =[{name:'Home',id:'home',class:'nav-link home'},{name:'About',id:'about',class:'nav-link about'},{name:'Skills',id:'skills',class:'nav-link skills'},{name:'Projects',id:'projects',class:'nav-link projects'},{name:'Contact',id:'contact',class:'nav-link contact'}]
-const NavLink = ({link}) => (
+const NavLink = ({link,onClose}) => (
   <Scroll.Link
   activeClass="active"
   to={link.id}
@@ -40,6 +46,7 @@ const NavLink = ({link}) => (
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
       className={link.class}
+      onClick={onClose}
       // href={`#${link.id}`}
       >
       {link.name}
@@ -52,8 +59,8 @@ export default function Nav() {
 
   return (
     <div  id="nav-menu" style={{position:'sticky',top:0,zIndex:2}}>
-      <Box bg="#C7AE92" px={4} >
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg="#C7AE92" px={4}  >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}  >
          
           <Flex alignItems={'center'}>
             <Menu>
@@ -85,7 +92,7 @@ export default function Nav() {
           </HStack>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon/> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
@@ -93,7 +100,7 @@ export default function Nav() {
 
         </Flex>
 
-        {isOpen ? (
+        {/* {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
@@ -101,7 +108,28 @@ export default function Nav() {
               ))}
             </Stack>
           </Box>
-        ) : null}
+        ) : null} */}
+
+        <Drawer placement={'top'} onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent bg="#C7AE92" >
+          <DrawerHeader borderBottomWidth='1px'>
+          <Flex alignItems={'center'}>
+            <Menu>
+                <Image w="25%" src='/images/signature.png'></Image>
+            </Menu>
+          </Flex>
+          </DrawerHeader>
+          <DrawerBody>
+          <Stack as={'nav'} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link.id} link={link} onClose={onClose} />
+              ))}
+            </Stack>
+          </DrawerBody>
+        </DrawerContent>
+        </Drawer>
+
       </Box>
 
       
